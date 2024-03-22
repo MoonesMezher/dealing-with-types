@@ -1,6 +1,7 @@
 /// <reference lib="es2015" />
 var Contact = /** @class */ (function () {
     function Contact(name, email, phone, group) {
+        if (group === void 0) { group = "AB"; }
         this.name = name;
         this.email = email;
         this.phone = phone;

@@ -3,9 +3,9 @@ class Contact {
     name: string;
     email: string;
     phone: string;
-    group: any;
+    group: string;
 
-    constructor(name: string, email: string, phone: string, group?: any) {
+    constructor(name: string, email: string, phone: string, group: string = "AB") {
         this.name = name;
         this.email = email;
         this.phone = phone;
