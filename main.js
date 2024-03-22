@@ -1,3 +1,4 @@
+/// <reference lib="es2015" />
 var Contact = /** @class */ (function () {
     function Contact(name, email, phone, group) {
         this.name = name;

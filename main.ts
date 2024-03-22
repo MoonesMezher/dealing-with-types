@@ -1,3 +1,4 @@
+/// <reference lib="es2015" />
 class Contact {
     name: string;
     email: string;
@@ -51,9 +52,7 @@ class AddressBook {
     searchContacts(searchTerm: string): Contact[] {
         const normalizedSearchTerm = searchTerm.toLowerCase();
 
-        return this.contacts?.filter((contact: Contact) =>
-            contact.name?.toLowerCase().includes(normalizedSearchTerm)
-        );
+        return this.contacts?.filter((contact: Contact) => contact.name?.toLowerCase().includes(normalizedSearchTerm));
     }
 
     printContacts(): void {
